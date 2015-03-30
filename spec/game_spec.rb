@@ -9,7 +9,6 @@ module ConwaysGame
 
     it "defaults to a 3 x 3 board" do
       game = Game.new
-      game.play!
       game.board.each do |row|
         expect(row).to be_an_instance_of( Array )
           row.each do |item|
@@ -18,9 +17,6 @@ module ConwaysGame
       end
     end
 
-    #it "is an array of array (2d)"
-    #it "contains cells"
-    #it "has some incrementor/counter"
   end
 
 end
